@@ -1,22 +1,19 @@
-const deliLine = ['Mary', 'Andrew']
-var num = 0
+const deliLine = []
+var num = 1
 
-function takeANumber(deliLine, number){
+function takeANumber(deliLine, number) {
   number += 1
-  console.log()
-  
-  
-  deliLine.push(name)
-  var position = deliLine.length
-  var sentence1 =  `Welcome, ${name}. You are number ${position} in line.`
-  console.log(sentence1)
-  return sentence1
-}
+  deliLine.push(number)
+  return "You are number " + number - 1 + "in line" }
+
+takeANumber(num)
+
+//alert people that its their turn to get their food
 
 function nowServing(deliLine){
   if (deliLine.length > 0) {
-    var firstperson = deliLine[0]
-    var sentence2 = "Currently serving " + firstperson + "."
+    var tickeNumber = deliLine[0]
+    var sentence2 = "Currently serving ticket number" + ticketNumber + "."
     deliLine.splice(0, 1)
     console.log(sentence2)
     return sentence2
