@@ -1,4 +1,11 @@
-function takeANumber(deliLine, name){
+const deliLine = ['Mary', 'Andrew']
+var num = 0
+
+function takeANumber(deliLine, number){
+  number += 1
+  console.log()
+  
+  
   deliLine.push(name)
   var position = deliLine.length
   var sentence1 =  `Welcome, ${name}. You are number ${position} in line.`
